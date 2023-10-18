@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packing Slip</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="my-5 page" size="A4">
+      <div class="p-5 slip">
+        <div class="top"></div>
+        <div class="bottom">
+          <h2 class="invoice-title">Invoice</h2>
+          <div class="invoice-body">
+            <div class="invoice-header">
+              <div class="web-store-details">
+                <h1 id="web-store-name">MyShoeSpot</h1>
+                <p class="store-address">
+                  5870 Melrose Ave Ste 3-545 <br />
+                  Los Angeles, CA 90038
+                </p>
+              </div>
+              <div class="barcode-container">
+                <img id="order-barcode" src="barcode.png" alt="barcode" />
+                <!--<p>Order #: 20069391</p>-->
+              </div>
+              <div class="order-details">
+                <p id="order-number">Order ID: 20069391</p>
+                <p id="order-date">Placed: 9/20/2023</p>
+                <p>Requested Service: UPS SurePost&REG; 1 lb or Greater</p>
+              </div>
+            </div>
+            <div class="address-info">
+              <div class="shipping-details">
+                <h3>Ship To:</h3>
+                <div class="shipping-details-body">
+                  <p id="shipping-name">Sha</p>
+                  <p id="shipping-address">1910 WASH AVE</p>
+                  <p id="shipping-city">EUNICE, LA 705335-4210 United States</p>
+                  <p id="shipping-postal-code">+1337-351-0313</p>
+                  <p id="shipping-phone">
+                    06515789c89abd14e28@members.ebay.com
+                  </p>
+                </div>
+              </div>
+              <div class="billing-details">
+                <h3>Bill To:</h3>
+                <div class="billing-details-body">
+                  <p id="billing-name">Sha</p>
+                  <p id="billing-address">1910 WASH AVE</p>
+                  <p id="billing-city">EUNICE, LA 705335-4210 United States</p>
+                  <p id="billing-postal-code">+1337-351-0313</p>
+                  <p id="billing-phone">06515789c89abd14e28@members.ebay.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="invoice-items">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Item #</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">UPC</th>
+                    <th scope="col">Weight (LB)</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="item-image">
+                      <img src="item.png" class="item-img" alt="item image" />
+                    </td>
+                    <td id="item-id">5ANAAGG2002-SZ-12</td>
+                    <td id="item-name">
+                      Aggressor Leveler Steel Toe Boots <br />
+                      Mens Shoes size 12, Color: Black
+                    </td>
+                    <td id="item-upc">850010899800</td>
+                    <td id="item-weight">
+                      3 lbs <br />
+                      0.00 <br />
+                      oz
+                    </td>
+                    <td id="item-location">*141</td>
+                    <td id="item-quantity">1</td>
+                    <td id="item-price">$39.90</td>
+                    <td id="item-total">$39.90</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="invoice-footer">
+            <h3 class="footer-title">Order</h3>
+            <div class="footer-body">
+              <div class="invoice-footer-left">
+                <p>
+                  Shipped On <span id="shipment-date">9/20/2023</span> using
+                  <span id="shipment-service"
+                    >UPS SurePost&REG; 1 lb or Greater</span
+                  >
+                </p>
+                <p id="tracking-number">1Z88VA88YW94776829</p>
+              </div>
+              <div class="invoice-footer-right">
+                <p>Shipping: $0.00</p>
+                <p>Total: $39.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
